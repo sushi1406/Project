@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseWise Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>ExpenseWise</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Expenses</a></li>
+                    <li><a href="#">Income</a></li>
+                    <li><a href="#">Forecast Expenses</a></li>
+                    <li><a href="#">Expense Summary</a></li>
+                    <li><a href="#">Income Summary</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>Dashboard</h1>
+                <button class="generate-btn">Generate Report</button>
+            </header>
+
+            <!-- Earnings Cards -->
+            <section class="earnings">
+                <div class="card">
+                    <h3>EARNINGS (DAILY)</h3>
+                    <p>₹ 500.0</p>
+                </div>
+                <div class="card">
+                    <h3>EARNINGS (WEEKLY)</h3>
+                    <p>₹ 10500.0</p>
+                </div>
+                <div class="card">
+                    <h3>EARNINGS (MONTHLY)</h3>
+                    <p>₹ 60800.0</p>
+                </div>
+                <div class="card">
+                    <h3>EARNINGS (YEARLY)</h3>
+                    <p>₹ 60800.0</p>
+                </div>
+            </section>
+
+            <!-- Charts -->
+            <section class="charts">
+                <div class="chart-container">
+                    <h3>Earnings Overview</h3>
+                    <canvas id="earningsChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Revenue Sources</h3>
+                    <canvas id="revenueChart"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
